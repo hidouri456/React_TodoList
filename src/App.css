@@ -1,0 +1,259 @@
+body {
+  background: #f6f8fa;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.todo-container {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 32px 24px 24px 24px;
+}
+
+.todo-title {
+  text-align: center;
+  color: #222;
+  margin-bottom: 24px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.todo-input-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.todo-input:focus {
+  border-color: #6366f1;
+}
+
+.todo-add-btn {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.todo-add-btn:hover {
+  background: #4f46e5;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f3f4f6;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  transition: background 0.2s;
+}
+.todo-item.editing {
+  background: #e0e7ff;
+}
+
+.todo-text {
+  flex: 1;
+  font-size: 1rem;
+  color: #222;
+}
+
+.todo-edit-input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #a5b4fc;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-right: 8px;
+}
+
+.todo-edit-btn, .todo-delete-btn, .todo-update-btn, .todo-cancel-btn {
+  margin-left: 6px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.todo-edit-btn {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+.todo-edit-btn:hover {
+  background: #6366f1;
+  color: #fff;
+}
+.todo-delete-btn {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+.todo-delete-btn:hover {
+  background: #ef4444;
+  color: #fff;
+}
+.todo-update-btn {
+  background: #bbf7d0;
+  color: #166534;
+}
+.todo-update-btn:hover {
+  background: #22c55e;
+  color: #fff;
+}
+.todo-cancel-btn {
+  background: #f3f4f6;
+  color: #222;
+}
+.todo-cancel-btn:hover {
+  background: #d1d5db;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.todo-cancel-btn:hover {
+  background-color: #5a6268;
+}
+
+/* Login Page Styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Un dégradé subtil et moderne en arrière-plan */
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.login-form {
+  
+  padding: 2.5rem 3rem;
+  background: white;
+ 
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Une ombre plus douce et plus grande */
+  width: 100%;
+  max-width: 400px;
+  border-top: 4px solid #6366f1; /* Une couleur d'accentuation */
+}
+
+.login-form h2 {
+  margin-top: 0;
+ 
+  margin-bottom: 2rem;
+  text-align: center;
+ 
+  color: #111827; /* Un texte plus sombre */
+  font-weight: 600;
+}
+
+.form-group {
+ 
+  margin-bottom: 1.5rem; /* Plus d'espace entre les champs */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+ 
+  padding: 0.8rem 1rem;
+  border: 1px solid #d1d5db; /* Une bordure plus claire */
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2); /* Effet de focus */
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #6366f1;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.login-btn:hover {
+  background-color: #4f46e5;
+}
+
+.login-btn:active {
+  transform: scale(0.98); /* Effet au clic */
+}
